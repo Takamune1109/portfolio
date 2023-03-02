@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>コンタクトフォーム</title>
+<meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/progressBar_line.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="splash">
+		<div id="splash_text"></div>
+		<div class="loader_cover loader_cover-up"></div>
+		<div class="loader_cover loader_cover-down"></div>
+	</div>
+  <div id="particles-js"></div>
+
+  <main>
+	<div id="container">
+		<div class="contact-form">
+		  <h1 class="title">Contact</h1>
+		  <form action="http://localhost/submit.php" method="post">
+			<div class="item">
+			  <label class="label">Name</label>
+			  <input type="text" class="inputs" name="name" required/>
+			</div>
+			<div class="item">
+			  <label class="label">Mail</label>
+			  <input type="email" class="inputs" name="email" />
+			</div>
+			  <div class="item">
+				<label class="label">Question</label>
+				<textarea name="message" class="inputsf" placeholder="ご質問はこちら"></textarea>
+			  </div>
+			  <div class="button-area">
+				<input type="submit" value="確認" class="submit"/>
+				<input type="reset" value="リセット" class="reset"/>
+			  </div>
+	<input type="hidden" name="redirectTo">
+		  </form>
+	  </div>
+<canvas id="waveCanvas"></canvas>
+<!--/container--></div>
+</main>
+
+<!--==============JQuery読み込み===============-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<!--IE11用※対応しなければ削除してください-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<!--印象編　5-4 幾何学模様-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!--自作のJS-->
+<script src="js/progressBar_line.js"></script>
+</body>
+</html>

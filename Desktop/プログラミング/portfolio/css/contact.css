@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+body {
+  height: 100vh;
+  place-content: center;
+}
+
+.contact-form {
+  padding: 100px 0px;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 100px;
+  font-weight: bold;
+  font-family: 'Amatic SC',cursive;
+}
+
+form {
+  width: 458px;
+  margin: 0 auto;
+}
+
+.item {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.label {
+  float: left;
+  margin-right: 20px;
+  width: 135px;
+  border-left: solid 3px #00b7b8;
+  padding-left: 10px;
+}
+
+.inputs {
+  float: left;
+  width: 300px;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: solid 1px #aaa;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+textarea {
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  height: 160px;
+  width: 300px;
+  font-size: 15px;
+}
+
+.button-area {
+  text-align: center;
+}
+
+/*ボタン*/
+
+input[type="submit"] {
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	color: #27acd9;
+	border-bottom: 2px solid #27acd9;
+	border-radius: 100vh;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	transition: 0.5s;
+  margin-right: 20px;
+}
+
+input[type="submit"]:hover {
+	color: #fff;
+	background: #27acd9;
+	border-bottom: 2px solid #fff;
+	transform: translateY(3px);
+}
+
+input[type="reset"] {
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	color: #27acd9;
+	border-bottom: 2px solid #27acd9;
+	border-radius: 100vh;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	transition: 0.5s;
+  padding: 17px 47px;
+}
+
+input[type="reset"]:hover {
+  color: #fff;
+	background: #27acd9;
+	border-bottom: 2px solid #fff;
+	transform: translateY(3px);
+}
+
+#waveCanvas {
+  height: 100px;
+}
+
+/*スマホ用のCSS*/
+
+@media screen and (max-width: 380px) {
+   body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  form {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .button-area {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .inputs[type="text"] {
+    margin: 0px 50px 50px 5px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .inputs[type="email"] {
+    margin: 15px 0px 50px 5px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .inputsf {
+    margin: 40px 0px 80px -300px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #waveCanvas {
+    position: absolute;
+    height: 80px;
+  }
+}
+
+/*タブレット用のCSS*/
+
+@media screen and (max-width: 780px) {
+  body {
+    height: 750px;
+  }
+}
+
+@media screen  and (max-width: 780px) {
+  #waveCanvas {
+    margin-bottom: -100px;
+  }
+}
